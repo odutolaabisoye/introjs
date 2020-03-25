@@ -37,11 +37,29 @@ console.log(cla.getAttribute('class'))
 console.log(cla.style)
 
 //set style
-cla.setAttribute('style', 'color:green; font-size: 50px')
+cla.setAttribute('style', 'color:green; font-size: 30px')
 
-cla.style.margin = "50px"
-cla.style.fontSize = "80px"
+cla.style.margin = "10px"
+cla.style.fontSize = "40px"
 
 //to delete a style - set it to empty string
 cla.style.margin = ""
 
+//gET CLASS AND chnage
+const contenta = document.querySelector('h2');
+contenta.classList.add('error');
+contenta.classList.remove('cerror');
+
+//innerText shows all the text that are not hidden
+//while the TextContent shows all the text
+
+//We can also pick part ofthe text content and  assign a class to
+const paras = document.querySelectorAll('h3');
+paras.forEach(h3 => {
+    if(h3.textContent.includes('error')){
+        h3.classList.add('error');
+    }
+    if(h3.innerText.includes('success')){
+        h3.classList.add('success');
+    }
+})

@@ -25,3 +25,4 @@ const caclArea = radius => {
   };
   console.log(total([10, 15, 30]), 0.2);
   
+  
