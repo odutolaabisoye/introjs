@@ -8,6 +8,7 @@ select.innerText =`This is a new Text`;
 select.innerText += ' THis is another one';
 select.innerHTML = '<h1>This is a new one</h1>'
 
+
 //working with arrays
 
 const content = document.querySelector('p');
